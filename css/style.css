@@ -1,14 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .pe-7s-angle-down::before {
     content: "";
+    color: white;
 }
 #header-title-scroll-down {
     display: block;
     position: absolute;
-    color: inherit;
+    color: white;
     text-decoration: none;
     text-align: center;
     font-size: 2rem;
@@ -23,16 +25,14 @@
     opacity: 0.6;
     transition: opacity 0.5s ease 0s;
 }
-
-.bg-image img{
-    background-image: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-   /*  background-color: rgba(12, 12, 12, 0.116);
-    position: absolute;
-    background-size: cover;
-    background-position: 50% 50%; */
+header{
+  min-height: 100vh;
+  background-image: url('../img/moraleja.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
 }
+
+
 
 /* <!-- START: About Our Agency --> */
 .aboutUs{
@@ -55,7 +55,7 @@
      margin:auto;
      display: flex;
      justify-content: center;
-     height: 22em;
+     padding: 2em;
   }
   
   .services{
@@ -124,9 +124,48 @@
 /* END -----Animacion------ */
 
 
+/* --------@media section-------- */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .section img{ 
+    height: 12vh;
+ } 
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+    .section img{
+      height: 25vh;
+      width: auto;
+    }
+  
+    .services{
+    flex-direction:column ;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .section img{
+    height: 30vh;
+    width: auto;
+  }
+
+  .services{
+  flex-direction:column ;
+  }
+
+  .aboutUs img{
+    width: 17em;
+}
+  
+}
+
+
+
   /* Portfolio block */
 .titulo{
-    padding: 4em;
+    margin:1em auto ;
     display: flex;
     justify-content: center;
   }
@@ -154,7 +193,6 @@
   
   .portfolio-block {
       background: #f6f6f6;
-      padding: 60px;
     }
      .portfolio-block .row {
       padding: 0;
@@ -232,23 +270,31 @@
         } 
         .titulo{
           margin-top: 1em;
-          
         }
         .titulo h1{
         padding: 0.7em;
         font-size: 2.5em;
         }
+        
       }
      
       @media only screen and (max-width: 450px) {
-      
        .grid{
         grid-template-columns: repeat(2,1fr);  
       }
       .grid img{
         width: 15em;
         height: 10em;
-      } 
+      }
+      .titulo{
+        margin-top: 0.3em;
+      }
+      .titulo h1{
+        font-size: 1.4em;
+      }
+     
+
+  
       /* .nk-gap-5{
         width: 2em;
       }
