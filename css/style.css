@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pe-7s-angle-down::before {
+    content: "";
+}
+#header-title-scroll-down {
+    display: block;
+    position: absolute;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    bottom: 65px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    line-height: 54px;
+    border-radius: 50%;
+    border: 1px solid;
+    opacity: 0.6;
+    transition: opacity 0.5s ease 0s;
+}
+
+.bg-image img{
+    background-image: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+   /*  background-color: rgba(12, 12, 12, 0.116);
+    position: absolute;
+    background-size: cover;
+    background-position: 50% 50%; */
+}
+
+/* <!-- START: About Our Agency --> */
+.aboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 100vw;
+}
+.aboutUs img{
+    width: 30em;
+}
+
+/* <!-- end: About Our Agency --> */
+
+/* <!-- START: Services --> */
+
+.section{
+    /* background: darkblue;  */
+     margin:auto;
+     display: flex;
+     justify-content: center;
+     height: 22em;
+  }
+  
+  .services{
+     /*  background: yellow; */
+     width: 90vw;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around; 
+     position: relative;
+     
+  }
+  .section img{
+     bottom: 0em;
+     height: 22vh;
+     width: auto;
+     /* margin-right: 10em; */
+     /* backface-visibility: hidden; */
+  } 
+
+.iconoServices{
+  /*  background: rgb(113, 113, 230);  */
+  position: relative; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  width: 20em;
+  height: 20em;
+  color: white;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bolder;
+   /* border: 1px solid;*/ 
+} 
+.card{
+   position: absolute;   /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center; 
+   transform:rotateY(0deg);     /* <<<<< ----animacion----- */
+   transform-style: preserve-3d;
+   transition: 0.5s cubic-bezier(0.4, 0.2, 0.2, 1) ;
+   backface-visibility: hidden;  /* para ocultar la cara opuesta */
+}
+.front{
+ /*   background: rgba(255, 255, 255, 0.322); */
+   width:100% ;    /*  los % se utilizan para estirar al tamaño del div */
+   height: 100%;  /* vw y vh es para estirar al tamaño de la pantalla */
+   transform:rotateY(0deg); 
+}
+.back{
+  background: rgb(255, 255, 255); 
+  color: black;
+  border-radius: 50%;
+  width:100%; 
+  height: 100%; 
+  transform:rotateY(180deg);  /*180 grados, osea esta dado la vuelta */
+}
+/*  ----animacion----- */
+
+.iconoServices:hover > .front{ /* cuando el raton se pone encima susede > que la cara frontal se da la vuelta */
+   transform:rotateY(-180deg);
+}
+
+.iconoServices:hover > .back{ /* cuando el raton se pone encima susede > que la cara back se da la vuelta */
+   transform:rotateY(0deg);
+}
+/* END -----Animacion------ */
+
+
+  /* Portfolio block */
+.titulo{
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+  }
+  .titulo h1{
+    padding: 0.3em;
+    border-bottom: 2px solid #b7bbbf;
+    width: 50%;
+    text-align: center;
+    /* font-family: Work Sans,sans-serif; */
+    font-family: 'Spartan', sans-serif;
+  /*   font-weight: lighter; */
+  }
+  .grid{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      width: 95%;
+      height: 90%;
+      margin: 2em auto;
+      transition:all 2s; 
+  }
+  .grid img{
+      width: auto;
+      height: 25em;
+  } 
+  
+  .portfolio-block {
+      background: #f6f6f6;
+      padding: 60px;
+    }
+     .portfolio-block .row {
+      padding: 0;
+      margin: 0;
+    } 
+    .portfolio-block .item {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+    .portfolio-block .item > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: rgba(92, 91, 91, 0.671);
+      position: absolute;
+      left: 0;
+      bottom: -100%;
+      width: 100%;
+      height: 100%;
+      text-transform: uppercase;
+    
+      transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+    
+      color: #fff;
+    }
+    .portfolio-block .item:hover > a {
+      bottom: 0;
+    }
+    .portfolio-block .item > a:hover {
+      text-decoration: none;
+    }
+  /*   .ie8 .portfolio-block .item > a {
+      background: #e54a1a;
+    } */
+    
+    .portfolio-block .item strong {
+      font: 400 17px/1.2 "Open Sans", Arial, sans-serif;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .portfolio-block .item em {
+      font: 300 13px "Open Sans", Arial, sans-serif;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .portfolio-block .item b {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 1;
+       display: inline-block; 
+      border: solid 1px #fff;
+      padding: 8px 15px 7px;
+    }
+    .portfolio-block .item b:hover {
+      background: #fff;
+      color: #E85425;
+      border-color: #fff;
+    }
+  
+
+    @media only screen and (max-width: 768px) {
+        .grid{
+          grid-template-columns: repeat(3,1fr);  
+        }
+        .grid img{
+          width: 17em;
+          height: 17em; 
+        } 
+        .titulo{
+          margin-top: 1em;
+          
+        }
+        .titulo h1{
+        padding: 0.7em;
+        font-size: 2.5em;
+        }
+      }
+     
+      @media only screen and (max-width: 450px) {
+      
+       .grid{
+        grid-template-columns: repeat(2,1fr);  
+      }
+      .grid img{
+        width: 15em;
+        height: 10em;
+      } 
+      /* .nk-gap-5{
+        width: 2em;
+      }
+      .nk-gap-5 {
+        height: 380px;
+      } */
+    }
+  
