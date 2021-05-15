@@ -334,10 +334,12 @@ nav{
   }
  
    .contactContainer{
-    display: flex;
+   /*  display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin:2em 20em ;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:2% 20% ;
   }
 
   .contactInfo{
@@ -370,14 +372,14 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     width: 30vw;
-    height: 40vh;
+    height: 30vh;
   }
 
 
   .formulario input{
     background: rgba(128, 128, 128, 0.39);
     width: 100%;
-    height: 3em;
+    height: 4em;
     text-decoration: none;
     border: none;
     padding: 1%;
@@ -392,8 +394,8 @@ nav{
   }
   .formulario .btn{
     text-decoration: none;
-    width: 28%;
-    height: 3em;
+    width: 8em;
+    height: 3.5em;
     background: black;
     color: white;
     font: 400 17px/1.2 "Open Sans", Arial, sans-serif; 
@@ -407,7 +409,38 @@ nav{
       justify-content: space-between;
     }
     .contactContainer{
-      display: flex;
-      flex-direction: column; 
+     height: 40em;
+    /*  background: chartreuse; */
+     margin: 0;
+     padding: 0;
+     grid-template-columns: repeat(1,1fr);
+     grid-template-rows: repeat(2,1fr);
+     align-items: center;
+    }
+   /*  .titulo{
+      background: #E85425;
+    } */
+    #contact{
+      margin: 0;
+      padding: 0;
+      /* background: green; */
+    }
+
+    .contactInfo{
+      height: 20em;
+      width: 100%;
+      /* background: blue; */
+      padding: 5%;
+    }
+    .formulario{
+     /*  background: brown; */
+     margin-top: 2em;
+      align-items: center;
+      height: 30em;
+    }
+    .formulario form{
+      width: 100%;
+      height: 100%;
+      padding: 5%;
     }
   }
