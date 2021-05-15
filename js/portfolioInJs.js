@@ -1,9 +1,5 @@
-const $portfolioInJS = 
-`
-<div class="titulo">
-<h1 data-aos='fade-up'>Lates works</h1>
-</div>
-<div class="grid">
+let $portfolioInJS =
+    `
 <div class="item">
     <img src="./img/condeDeGitanes.jpg" alt="NAME" class="IMGresponsive" data-aos='fade-right'>
     <a href="./img/condeDeGitanes.jpg" class="zoom valign-center">
@@ -124,7 +120,15 @@ const $portfolioInJS =
         </div>
     </a>
 </div>
+`;
+let $portfolioTitle = `
+<div class="titulo">
+<h1 data-aos='fade-up'>Latest works</h1>
 </div>
 `;
 
-document.getElementById('portfolio').innerHTML =  $portfolioInJS;
+document.getElementById('portfolio').innerHTML =
+    $portfolioTitle +
+    '<div class="grid">' +
+        $portfolioInJS
+    '</div>';
