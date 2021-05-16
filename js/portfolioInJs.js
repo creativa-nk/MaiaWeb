@@ -127,8 +127,14 @@ let $portfolioTitle = `
 </div>
 `;
 
+let $toe = buildItems(items);
+
 document.getElementById('portfolio').innerHTML =
     $portfolioTitle +
-    '<div class="grid">' +
-        $portfolioInJS
+    '<div class="grid" id="portfolioGrid">' +
+        // $portfolioInJS
+        // $toe
     '</div>';
+
+
+document.getElementById('portfolioGrid').appendChild($toe);
