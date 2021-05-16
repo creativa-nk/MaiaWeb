@@ -34,18 +34,16 @@ function buildItems(items) {
         // console.log(items[key]);
         let img = builImgFromItem(items[key]);
         let a = buildLinkFromItem(items[key]);
-
-        fragment.appendChild(img);
+        fragment.appendChild(a);
+        fragment.insertBefore(img,a);
     }
     return fragment;
 }
 
 function buildLinkFromItem(item){
-    console.log(LINK_CLASS);
     let a =  document.createElement('a');
     a.href=item.src;
     a.classList.add(...LINK_CLASS);
-    console.log(a);
     return a
 }
 
