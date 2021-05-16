@@ -8,21 +8,21 @@
 </a> */}
 const IMG_PATH = './img';
 const IMG_CLASS = 'IMGresponsive';
-const LINK_CLASS = 'zoom valign-center'
+const LINK_CLASS = ['zoom', 'valign-center']
 const DIV_CLASS = 'valign-center-elem'
 const items = [
     {
-        img_src: 'condeDeGitanes.jpg',
+        src: 'condeDeGitanes.jpg',
         alt: 'NAME',
         message: 'Madrid City Project',
     },
     {
-        img_src: 'moraleja.jpg',
+        src: 'moraleja.jpg',
         alt: 'NAME',
         message: 'Madrid City Project',
     },
     {
-        img_src: 'SALON.jpg',
+        src: 'SALON.jpg',
         alt: 'NAME',
         message: 'Madrid City Project',
     }
@@ -33,17 +33,27 @@ function buildItems(items) {
     for (key in items) {
         // console.log(items[key]);
         let img = builImgFromItem(items[key]);
+        let a = buildLinkFromItem(items[key]);
+
         fragment.appendChild(img);
     }
     return fragment;
 }
 
+function buildLinkFromItem(item){
+    console.log(LINK_CLASS);
+    let a =  document.createElement('a');
+    a.href=item.src;
+    a.classList.add(...LINK_CLASS);
+    console.log(a);
+    return a
+}
 
 function builImgFromItem(item) {
     let img = document.createElement('img');
-    img.src = IMG_PATH + '/' + item.img_src;
+    img.src = IMG_PATH + '/' + item.src;
     img.alt = item.alt;
-    console.log(img);
+    // console.log(img);
     return img;
 }
 
