@@ -17,18 +17,65 @@ const items = [
         src: 'SALON.jpg',
         alt: 'NAME',
         message: 'Madrid City Project',
-    }
+    },
+    {
+        src: 'valdemartin.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
+    {
+        src: 'AceroCorten.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
+    {
+        src: 'salon2.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
+    {
+        src: 'condeDeGitanes.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
+    {
+        src: 'AceroCorten.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
+    {
+        src: 'valdemartin.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
+    {
+        src: 'salon2.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
+    {
+        src: 'moraleja.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
+    {
+        src: 'SALON.jpg',
+        alt: 'NAME',
+        message: 'Madrid City Project',
+    },
 ];
+
 
 function buildItems(items) {
     let fragment = new DocumentFragment();
     for (key in items) {
         let divItem = document.createElement('div');
-        divItem.classList.add('item');
-        fragment.appendChild(divItem);
         let img = builImgFromItem(items[key], key);
         let a = buildLinkFromItem(items[key]);
         let div = buildDivFromItem(items[key]);
+
+        divItem.classList.add('item');
+        fragment.appendChild(divItem);
         divItem.appendChild(img)
         divItem.appendChild(a);
         a.appendChild(div)
@@ -55,21 +102,17 @@ function builImgFromItem(item, key) {
     img.src = IMG_PATH + '/' + item.src;
     img.alt = item.alt;
     img.classList.add('IMGresponsive');
-    if(key%2 == 0){
-        img.dataset.aos = 'fade-left';
-    } else {
-        img.dataset.aos = 'fade-right';
-    }
-    // console.log(img);
+    img.dataset.aos = (key%2 == 0)?'fade-right':'fade-left';
     return img;
 }
 
 function buildDivFromItem(item) {
     let div = document.createElement('div');
-    div.classList.add(...DIV_CLASS);
     let strong = document.createElement('strong');
-    strong.innerHTML = item.message;
     let b = document.createElement('b');
+
+    div.classList.add(...DIV_CLASS);
+    strong.innerHTML = item.message;
     b.innerHTML = 'Details'
     div.appendChild(strong);
     div.appendChild(b);
