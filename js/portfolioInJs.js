@@ -1,19 +1,14 @@
-let $portfolioInJS =
-    ``;
-let $portfolioTitle = `
-<div class="titulo">
-<h1 data-aos='fade-up'>Latest works</h1>
-</div>
-`;
+let divTitle = document.createElement('div');
+let h1 = document.createElement('h1');
+let divGrid = document.createElement('div')
 
-let $toe = buildItems(items);
+divTitle.classList.add('titulo');
+h1.dataset.aos = 'fade-up';
+h1.innerText='Latest works';
 
-document.getElementById('portfolio').innerHTML =
-    $portfolioTitle +
-    '<div class="grid" id="portfolioGrid">' +
-        // $portfolioInJS
-        // $toe
-    '</div>';
+divGrid.classList = 'grid';
 
-
-document.getElementById('portfolioGrid').appendChild($toe);
+divTitle.appendChild(h1);
+divGrid.appendChild(buildItems(items));
+document.getElementById('portfolio').appendChild(divTitle);
+document.getElementById('portfolio').appendChild(divGrid);
