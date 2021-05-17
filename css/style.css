@@ -41,7 +41,13 @@ nav{
   justify-content: space-around;
   align-items: center;
 /*   background-color: rgba(43, 42, 42, 0.281); */
-  height: 6em
+  height: 4em;
+  transition: all 0.3s ease-in-out 0s;
+  position: fixed;
+  right: 0;
+  left: 0; 
+  z-index: 1030;  /*  !!!!! barra de nav pasa por encima de otros elementos */
+  transition: all 0.4s ease-in-out 0s;
 }
 
 .navegacion{
@@ -53,7 +59,7 @@ nav{
 
 .navegacion a{
   cursor: pointer;
-  color: white;
+  color: rgb(136, 116, 116);
   text-decoration: none;
   font-family: 'Spartan', sans-serif;
 }
