@@ -11,3 +11,27 @@ function scrollFunction() {
     document.getElementsByClassName("menu_bar").style.backgroundColor = "transparent";
   }
 }
+
+
+
+
+/* ----NAV---- */
+
+function Mostrar(){
+  document.getElementById('navegacion').style.display='block';
+}
+function Ocultar(){
+  document.getElementById('navegacion').style.display='none'
+}
+
+
+
+function Mostrar_Ocultar(){
+  var menu = document.getElementsById('navegacion');
+
+  if(menu.style.display == 'none'){
+    Mostrar()
+  }else{
+    Ocultar()
+  }
+}

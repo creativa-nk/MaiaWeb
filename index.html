@@ -31,14 +31,15 @@
 
    <div class="menu_bar">
         <img src="./img/logo4.png" alt="" width="100">
-        <a href="#" class="btn-menu"><i class="fas fa-bars"></i></a>
+        <input type="submit" value="Mostrar" onclick="Mostrar_Ocultar()">
+        <span class="btn-menu"  onclick="Mostrar_Ocultar()"><i class="fas fa-bars"></i></span>
     </div>
 
     <nav id='nav' data-aos='fade-down'>
         <div class="logo">
             <img src="./img/logo4.png" alt="" width="100">
         </div>
-        <ul class="navegacion">
+        <ul class="navegacion" id="navegacion">
             <li>
                 <a href="index.html#about">About</a>
             </li>
@@ -49,7 +50,21 @@
                 <a href="index.html#contact">Contact</a>
             </li>
         </ul>
+
+       <!--  <ul class="navegacionMovil" id="navegacionMovil" style="display: none;">
+            <li>
+                <a href="index.html#about">About</a>
+            </li>
+            <li>
+                <a href="index.html#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="index.html#contact">Contact</a>
+            </li>
+        </ul> -->
+
     </nav>
+   
 
 
 
@@ -434,6 +449,9 @@
 
 
 <!-- SCRIPT -->
+<script src="./js/main.js"></script>
+<script src="./js/menu.js"></script>
+<script src='http://code.jquery.com/jquery-latest.js'></script>
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
@@ -444,11 +462,7 @@
       duration:1000         /*  empieza cuando estamos aciendo scroll 400px, y dura 1s */
   });
 </script>
-
-<script src="./js/main.js"></script>
-<script src="./js/menu.js"></script>
-<script src='http://code.jquery.com/jquery-latest.js'></script>
-    
+  
     
 </body>
 </html>

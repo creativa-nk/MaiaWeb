@@ -51,7 +51,7 @@ nav{
 }
 
 .navegacion{
-  width: 30em;
+  width: 20em;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -70,26 +70,30 @@ nav{
 
 
 @media screen and (max-width:800px){
-
+/* 
   nav{
-    /*  background: aqua;  */
-    height: 15em;
+    align-items: flex-start;
+    /* background:burlywood;  */
+    /* height: 25em;
     font-size: xx-large;
-    
-  }
+
+  } */ 
 
   .navegacion{
-     /*  background: blueviolet; */
+      background: blueviolet;
+      /* margin: 1.7em auto; */
+      display: none;
       flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      left:-100%;
-      overflow: hidden;
-      margin-top: 40%;
-     /*  position: fixed; */  
+      align-items: flex-start;
+      width: auto;
+      height: auto;
+      position: fixed;
+      /* margin-top: 20%;  */
   }
+  
+  .navegacion li{
+      padding: 1em;
+    }
 
   .navegacion a{
     color: white;
@@ -102,7 +106,7 @@ nav{
   .menu_bar{
     display:flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     padding: 1em;
     background: #E85425;
     position: fixed;
