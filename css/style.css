@@ -70,33 +70,31 @@ nav{
 
 
 @media screen and (max-width:800px){
-/* 
-  nav{
-    align-items: flex-start;
-    /* background:burlywood;  */
-    /* height: 25em;
-    font-size: xx-large;
 
-  } */ 
+  nav{
+    /* background:burlywood;  */
+    width: 100vw;
+    height: 100vh;
+    font-size: x-large;
+
+  } 
 
   .navegacion{
       background: blueviolet;
       /* margin: 1.7em auto; */
       display: none;
-      flex-direction: column;
-      align-items: flex-start;
       width: auto;
       height: auto;
       position: fixed;
-      /* margin-top: 20%;  */
+      
   }
   
   .navegacion li{
-      padding: 1em;
+      padding: 2em;
     }
 
   .navegacion a{
-    color: white;
+    color: rgb(97, 24, 24);
   }
 
   nav img{
