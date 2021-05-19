@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden; 
 }
-/*  .pe-7s-angle-down::before {
-    content: "\e688";
-    color: white;
-} */ 
+html{
+  height:100%; 
+}
 
 #header-title-scroll-down {
     display: block;
@@ -57,22 +57,24 @@ header{
      margin:auto;
      display: flex;
      justify-content: center;
-     padding: 2em;
+     padding: 1em;
+     height: auto;
+    
   }
   
   .services{
-     /*  background: yellow; */
-     width: 90vw;
+      /*  background: yellow;  */
+      width: 90vw;
      display: flex;
      flex-direction: row;
      align-items: center;
      justify-content: space-around; 
      position: relative;
-     
+     overflow-x: visible; 
   }
   .section img{
      bottom: 0em;
-     height: 22vh;
+     height: 21vh;
      width: auto;
      /* margin-right: 10em; */
      /* backface-visibility: hidden; */
@@ -120,9 +122,12 @@ header{
   height: auto;
 }
 .back p{
+  width: 90%;
+  margin: 0 auto;
   color: white;
   font-family: 'Spartan', sans-serif;
   font-size: 1.5em;
+  text-align: center;
 }
 
 /*  ----animacion----- */
@@ -365,3 +370,24 @@ header{
       grid-row-gap: 3em;
     }
   }
+
+ /*  <!--Start -----FOOTER----- --> */
+
+ footer {
+  background-color:rgba(32, 32, 32, 0.185);
+  padding: 0.6em;
+   width: 100vw; 
+  bottom: 0;
+  /* position:fixed; */
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color:white ;
+}
+p{
+  text-align: end;
+  margin-right: 2em;
+  font-size: 0.8em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
