@@ -40,13 +40,67 @@ header{
 /* <!-- START: About Our Agency --> */
 .aboutUs{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    height: 20em;
+    height: 40vw;
     width: 100vw;
+    padding: 2em;
 }
 .aboutUs img{
-    width: 30em;
+    width: 30vw;
+    height: auto;
+}
+.aboutUs p{
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  max-width: 50%;
+  overflow-x: visible; 
+}
+
+@media only screen and (max-width: 1024px) and /* (orientation: portrait) */ {
+  .aboutUs{
+    height: auto;
+  }
+
+  .aboutUs p{
+    margin: 1em auto;
+    font-size: 0.7em;
+    max-width: 100%;
+    padding: 1em;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .aboutUs{
+    height: auto;
+  }
+
+  .aboutUs p{
+    margin: 1em auto;
+    font-size: 1em;
+    max-width: 100%;
+    padding: 1em;
+  }
+  
+    
+}
+
+@media only screen and (max-width: 450px) {
+
+  .aboutUs{
+    height: auto;
+  }
+
+  .aboutUs p{
+    margin: 1em auto;
+    font-size: 1em;
+    max-width: 100%;
+    padding: 1em;
+  }
 }
 
 /* <!-- end: About Our Agency --> */
@@ -335,7 +389,7 @@ header{
     height: 10em;
   }
   #contact{
-    height: 50vh;
+    height:auto ;
   }
  
    .contactContainer{
@@ -349,6 +403,7 @@ header{
   }
 
   .contactInfo{
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
