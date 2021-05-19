@@ -25,6 +25,7 @@ html{
     border: 1px solid;
     opacity: 0.6;
     transition: opacity 0.5s ease 0s;
+    overflow-x: visible; 
 }
 
 header{
@@ -221,10 +222,10 @@ header{
       transition:all 2s; 
   }
   .grid img{
-      width: auto;
-      height: 25em;
+      width: 100%;
+      height: 100%;
   } 
-  
+
      .portfolio-block .row {
       padding: 0;
       margin: 0;
@@ -235,7 +236,7 @@ header{
       margin: 0;
       overflow: hidden;
     }
-    .portfolio-block .item > a {
+    .portfolio-block .item  a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -267,26 +268,25 @@ header{
     } */
     
     .portfolio-block .item strong {
-      font: 400 17px/1.2 "Open Sans", Arial, sans-serif;
-      display: block;
-      margin-bottom: 4px;
+     /*  font: 400 17px/1.2 "Open Sans", Arial, sans-serif; */
+     font-family: 'Spartan', sans-serif;
+     text-decoration: none;
+     display: block;
+     margin-bottom: 4px;
     }
-    .portfolio-block .item em {
-      font: 300 13px "Open Sans", Arial, sans-serif;
-      display: block;
-      margin-bottom: 10px;
-    }
+  
     .portfolio-block .item b {
+      font-family: 'Spartan', sans-serif;
       font-weight: 300;
-      font-size: 12px;
+      font-size: 9px;
       line-height: 1;
-       display: inline-block; 
-      border: solid 1px #fff;
+      display: inline-block; 
+      border: solid 1px rgb(214, 214, 214);
       padding: 8px 15px 7px;
     }
     .portfolio-block .item b:hover {
       background: #fff;
-      color: #E85425;
+      color: #525252;
       border-color: #fff;
     }
   
@@ -295,10 +295,10 @@ header{
         .grid{
           grid-template-columns: repeat(3,1fr);  
         }
-        .grid img{
+      /*   .grid img{
           width: 17em;
           height: 17em; 
-        } 
+        }  */
         .titulo{
           margin-top: 1em;
         }
@@ -313,15 +313,18 @@ header{
        .grid{
         grid-template-columns: repeat(2,1fr);  
       }
-      .grid img{
+    /*   .grid img{
         width: 15em;
         height: 10em;
-      }
+      } */
       .titulo{
         margin-top: 0.8em;
       }
       .titulo h1{
         font-size: 1.6em;
+      }
+      .valign-center-elem{
+        font-size: 0.7rem;
       }
     
     }
