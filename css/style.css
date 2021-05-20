@@ -7,6 +7,9 @@
 html{
   height:100%; 
 }
+body{
+  font-family: 'Spartan', sans-serif;
+}
 
 #header-title-scroll-down {
     display: block;
@@ -35,6 +38,98 @@ header{
   background-position: 50% 50%;
 }
 
+/* -----START --- MENU------------- */
+
+nav{
+  /* background:rgba(80, 80, 80, 0.157) ; */
+  padding: 0 15px;
+}
+nav a{
+ color: rgb(0, 0, 0); 
+ text-decoration: none;
+}
+
+.menu{
+  list-style-type: none;
+}
+.logo{
+  padding: 7.5px 10px 0px 0;
+}
+.item{
+  padding: 5px;
+  margin-right: 30px;
+  font-size: 0.8em;
+}
+.item .toggle :hover{
+  color: white;
+}
+
+/* MOBILE NAVEGATION */
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a{
+  display: block;
+  padding: 15px 5px;
+}
+
+.toggle{
+  order: 1;
+  font-size: 20px;
+}
+.item{
+  order: 2; /* cambiamos el orden, items aparecen los ultimos */
+  width: 100%; /* se queda el la linea de arriba el logo y toggkebar, los items bajan */
+  text-align: center;
+  display: none; /* desaparecen */
+}
+
+.active .item{       /* para volver a mostrar los item */
+  display: block;
+}
+
+
+
+@media all and (min-width:700px){
+  .menu{
+      justify-content: center;
+  }
+
+  .logo{
+      flex: 1;
+  }
+
+  .toggle{
+      flex: 1;
+      text-align: right;
+      order: 1;
+  }
+}
+
+
+/* Desktop Menu */
+
+@media all and (min-width:960px){
+  .item{
+      order:1; /* queremos que aparezcan despues del logo, sirve mejor mara menus con mas botones y submenus */
+      position: relative;
+      display: block;
+      width: auto;
+  }
+  .toggle{
+      display: none;
+  }
+}
+
+
+
+
+
+/* END MENU */
 
 
 /* <!-- START: About Our Agency --> */
@@ -420,7 +515,7 @@ header{
   .contactInfo ul{
     list-style: none;
   }
-  li{
+  .contactInfo li{
     line-height : 40px; 
   }
   .contactInfo ul li span{
