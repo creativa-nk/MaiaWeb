@@ -55,6 +55,7 @@ nav .toggle a{
 
 .menu{
   list-style-type: none;
+  overflow-x: visible;
 }
 .logo{
   padding: 7.5px 10px 0px 0;
