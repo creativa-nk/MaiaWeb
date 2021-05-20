@@ -14,3 +14,5 @@ function toggleMenu(){
     console.log('menu abierto')
     }
 }
+
+toggle.addEventListener('click', toggleMenu, false);
