@@ -89,7 +89,7 @@ nav .item a{
   order: 1;
   font-size: 20px;
 }
-.menu .item{
+.item{
   order: 2; /* cambiamos el orden, items aparecen los ultimos */
   width: 100%; /* se queda el la linea de arriba el logo y toggkebar, los items bajan */
   text-align: center;
@@ -176,8 +176,8 @@ nav .item a{
 
   .aboutUs p{
     margin: 1em auto;
-    font-size: 0.7em;
-    max-width: 100%;
+    font-size: 1em;
+    max-width: 80%;
    /*  padding: 1em; */
   }
 }
@@ -314,6 +314,9 @@ nav .item a{
   .section img{ 
     height: 12vh;
  } 
+ .back p{
+  font-size: 0.8em;
+}
 }
 
 
@@ -332,7 +335,7 @@ nav .item a{
       height: auto;
     }
     .back p{
-      font-size: 0.8em;
+      font-size: 1.1em;
     }
 }
 
@@ -396,13 +399,13 @@ nav .item a{
       padding: 0;
       margin: 0;
     } 
-    .portfolio-block .item {
+    .portfolio-block .ImgItem {
       position: relative;
       padding: 0;
       margin: 0;
       overflow: hidden;
     }
-    .portfolio-block .item  a {
+    .portfolio-block .ImgItem  a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -422,17 +425,17 @@ nav .item a{
       -webkit-transition: all 10s ease;
     }
 
-    .portfolio-block .item:hover > a {
+    .portfolio-block .ImgItem:hover > a {
       top: 0;
     }
-    .portfolio-block .item > a:hover {
+    .portfolio-block .ImgItem > a:hover {
       text-decoration: none;
     }
   /*   .ie8 .portfolio-block .item > a {
       background: #e54a1a;
     } */
     
-    .portfolio-block .item strong {
+    .portfolio-block .ImgItem strong {
      /*  font: 400 17px/1.2 "Open Sans", Arial, sans-serif; */
      font-family: 'Spartan', sans-serif;
      text-decoration: none;
@@ -440,7 +443,7 @@ nav .item a{
      margin-bottom: 4px;
     }
   
-    .portfolio-block .item b {
+    .portfolio-block .ImgItem b {
       font-family: 'Spartan', sans-serif;
       font-weight: 300;
       font-size: 9px;
@@ -449,7 +452,7 @@ nav .item a{
       border: solid 1px rgb(214, 214, 214);
       padding: 8px 15px 7px;
     }
-    .portfolio-block .item b:hover {
+    .portfolio-block .ImgItem b:hover {
       background: #fff;
       color: #525252;
       border-color: #fff;
@@ -492,10 +495,73 @@ nav .item a{
     }
 
 
-  /* ------start-----CONTACTO----- */
+  /* ------start-----Carusel de frases----- */
   .separador{
-    height: 10em;
+   height: 10em;
+   display: flex;
+   align-items: center;
   }
+
+  .imgCarusel{
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.imgCarusel ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+   /*  background: tomato; */
+
+    animation: cambioDeImg 20s infinite;
+    animation-direction: alternate;   /* para cuando llegue a 300% y nos enseñe la ultima img  vuelva en direccion contraria*/ 
+    animation-timing-function: linear; 
+}
+
+.imgCarusel li{
+    list-style: none;
+    width: 100%;
+    color: white;
+    font-size: 2em;   
+}
+.imgCarusel p{
+  /* background: chartreuse; */
+  margin: 1em auto;
+  width: 30%;
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  line-height: 1.5em;
+}
+
+@keyframes cambioDeImg {
+  0% {margin-left: 0;}      /* img1!!! */
+  10% {margin-left: 0;}     /* 4 seg (20% de 20 seg) la imagen no se mueve */
+
+  15% {margin-left: -100%;}   /* la img se cambia img2!!!   */
+  45% {margin-left: -100%;}   /* el cambio de una img a otra tardara 1 seg */
+
+  50% {margin-left: -200%;}   /* la img se cambia img3!!!   */
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}   /* la img se cambia img4!!!  */
+  100% {margin-left: -300%;}
+}
+
+@media only screen and (max-width: 450px) {
+  .imgCarusel li{
+    font-size: 1.2em;
+  }
+  .imgCarusel p{
+    width: 70%;
+  }
+}
+
+
+
+
+
+/* ------start-----CONTACTO----- */
   #contact{
     height:auto ;
   }
