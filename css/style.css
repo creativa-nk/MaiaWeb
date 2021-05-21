@@ -497,7 +497,7 @@ nav .item a{
 
   /* ------start-----Carusel de frases----- */
   .separador{
-   height: 10em;
+   height: 15em;
    display: flex;
    align-items: center;
   }
@@ -511,7 +511,7 @@ nav .item a{
 .imgCarusel ul{
     display: flex;
     padding: 0;
-    width: 300%;
+    width: 400%;
    /*  background: tomato; */
 
     animation: cambioDeImg 20s infinite;
@@ -527,11 +527,12 @@ nav .item a{
 }
 .imgCarusel p{
   /* background: chartreuse; */
-  margin: 1em auto;
+  margin: 2em auto;
   width: 30%;
   text-align: center;
   font-family: 'Spartan', sans-serif;
-  line-height: 1.5em;
+  font-weight: bold;
+   line-height: 1.3em;
 }
 
 @keyframes cambioDeImg {
@@ -547,13 +548,32 @@ nav .item a{
   75% {margin-left: -300%;}   /* la img se cambia img4!!!  */
   100% {margin-left: -300%;}
 }
+@media only screen and (max-width: 1024px){
+  .imgCarusel li{
+    font-size: 1.6em;
+  }
+  .imgCarusel p{
+    width: 65%;
+    line-height: 1.7em;
+  }
+}
+@media only screen and (max-width: 768px){
+  .imgCarusel li{
+    font-size: 1.6em;
+  }
+  .imgCarusel p{
+    width: 55%;
+    line-height: 1.7em;
+  }
+}
 
 @media only screen and (max-width: 450px) {
   .imgCarusel li{
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .imgCarusel p{
     width: 70%;
+    line-height: 1.7em;
   }
 }
 
