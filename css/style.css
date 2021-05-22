@@ -523,15 +523,16 @@ nav .item a{
     list-style: none;
     width: 100%;
     color: white;
-    font-size: 2em;   
+    font-size: 4em; 
+    margin:auto ;  
 }
 .imgCarusel p{
-  /* background: chartreuse; */
-  margin: 2em auto;
-  width: 30%;
+   /* background: chartreuse; */
+  margin: auto;
+  width: 38%;
   text-align: center;
-  font-family: 'Spartan', sans-serif;
-  font-weight: bold;
+  font-family: 'Caveat', cursive;
+ /*  font-weight: bold; */
    line-height: 1.3em;
 }
 
@@ -550,16 +551,16 @@ nav .item a{
 }
 @media only screen and (max-width: 1024px){
   .imgCarusel li{
-    font-size: 1.6em;
+    font-size: 3em;
   }
   .imgCarusel p{
-    width: 65%;
+    width: 50%;
     line-height: 1.7em;
   }
 }
 @media only screen and (max-width: 768px){
   .imgCarusel li{
-    font-size: 1.6em;
+    font-size: 2.5em;
   }
   .imgCarusel p{
     width: 55%;
@@ -569,11 +570,11 @@ nav .item a{
 
 @media only screen and (max-width: 450px) {
   .imgCarusel li{
-    font-size: 1.4em;
+    font-size: 2.5em;
   }
   .imgCarusel p{
-    width: 70%;
-    line-height: 1.7em;
+    width: 80%;
+    line-height: 1.2em;
   }
 }
 
