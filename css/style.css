@@ -43,6 +43,10 @@ header{
 nav{
   background:rgba(80, 80, 80, 0.157) ;
   padding: 0 15px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  transition: top 0.5s;
 }
 nav .item a{
  color: rgb(252, 252, 252); 
