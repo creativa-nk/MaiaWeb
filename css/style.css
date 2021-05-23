@@ -527,7 +527,7 @@ nav .item a{
     list-style: none;
     width: 100%;
     color: white;
-    font-size: 4em; 
+    font-size: 3.5em; 
     margin:auto ;  
 }
 .imgCarusel p{
@@ -596,7 +596,7 @@ nav .item a{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 3em;
-    max-width: 70vw;
+    max-width: 75vw;
     height: auto;
     margin: auto;
     margin-bottom: 4em;
@@ -621,8 +621,8 @@ nav .item a{
   .contactInfo li{
     line-height : 40px; 
   }
-  .contactInfo ul li span{
-    font-size: 0.6em;
+  .contactInfo ul li p{
+    font-size: 0.7em;
     text-align: left;
   }
   .contactContainer p{
