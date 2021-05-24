@@ -18,7 +18,7 @@ function toggleMenu(){
 toggle.addEventListener('click', toggleMenu, false);
 
 /* menu scroll down */
-let ubicacionPrincipal  = window.pageYOffset;
+/* let ubicacionPrincipal  = window.pageYOffset;
 window.onscroll = function() {
     let Desplazamiento_Actual = window.pageYOffset;
     if(ubicacionPrincipal >= Desplazamiento_Actual){
@@ -28,4 +28,4 @@ window.onscroll = function() {
         document.getElementById('navbar').style.top = '-5em';
     }
     ubicacionPrincipal = Desplazamiento_Actual;
-}
+} */

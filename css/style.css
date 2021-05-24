@@ -43,9 +43,9 @@ header{
 nav{
   background:rgba(80, 80, 80, 0.157) ;
   padding: 0 15px;
-  position: fixed;
+ /*  position: fixed;
   width: 100vw;
-  top: 0;
+  top: 0; */
   transition: top 0.5s;
 }
 nav .item a{
@@ -209,11 +209,12 @@ nav .item a{
 
   .aboutUs{
     height: auto;
+    line-height: 1.4em;
   }
 
   .aboutUs p{
     margin: 1em auto;
-    font-size: 1.2em;
+    font-size: 1.1em;
     max-width: 100%;
     
   }
