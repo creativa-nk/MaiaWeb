@@ -156,7 +156,7 @@ nav .item a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 50vw;
+    height: auto;
     width: 100vw;
     padding: 3em;
     line-height: 2em;
@@ -164,15 +164,26 @@ nav .item a{
 .aboutUs img{
     width: 30vw;
     height: auto;
+    
 }
 .aboutUs p{
+  margin-top: 2em;
   font-family: 'Spartan', sans-serif;
   font-size: 1.3em;
   text-align: left;
   max-width: 60%;
-  overflow-x: visible;
-  
-  text-align: justify;  /* el texto de periodico */
+  overflow-x: visible; 
+  text-align: justify;   /* el texto de periodico */
+  /* overflow-wrap: break-word;
+ word-wrap: break-word; */
+}
+
+.aboutUs a{
+  text-decoration: none;
+  color: #233f8dc7;
+}
+.aboutUs #desplegar{
+  display: inline;
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
@@ -200,6 +211,7 @@ nav .item a{
     font-size: 1em;
     max-width: 100%;
     padding: 0.5em;
+    word-wrap: break-word;
   }
   
     
@@ -214,9 +226,10 @@ nav .item a{
 
   .aboutUs p{
     margin: 1em auto;
-    font-size: 1.1em;
+    font-size: 1em;
     max-width: 100%;
-    
+    word-spacing: 4px;
+    word-wrap: break-word;
   }
 }
 
@@ -490,10 +503,11 @@ nav .item a{
         width: 15em;
         height: 10em;
       } */
-      .titulo{
+    /*   .titulo{
         margin-top: 0.8em;
-      }
+      } */
       .titulo h1{
+        margin-top: 1.5em;
         font-size: 1.6em;
       }
       .valign-center-elem{
@@ -603,7 +617,7 @@ nav .item a{
     max-width: 75vw;
     height: auto;
     margin: auto;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
     font-family: 'Spartan', sans-serif;
   }
 
