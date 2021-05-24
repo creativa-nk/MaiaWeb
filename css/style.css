@@ -156,9 +156,10 @@ nav .item a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 40vw;
+    height: 50vw;
     width: 100vw;
-    padding: 2em;
+    padding: 3em;
+    line-height: 2em;
 }
 .aboutUs img{
     width: 30vw;
@@ -168,8 +169,9 @@ nav .item a{
   font-family: 'Spartan', sans-serif;
   font-size: 1.3em;
   text-align: left;
-  max-width: 50%;
+  max-width: 60%;
   overflow-x: visible;
+  
   text-align: justify;  /* el texto de periodico */
 }
 
