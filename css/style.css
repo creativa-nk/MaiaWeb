@@ -545,7 +545,7 @@ nav .item a{
     list-style: none;
     width: 100%;
     color: white;
-    font-size: 3.5em; 
+    font-size: 2.5em; 
     margin:auto ;  
 }
 .imgCarusel p{
@@ -553,7 +553,7 @@ nav .item a{
   margin: auto;
   width: 38%;
   text-align: center;
-  font-family: 'Caveat', cursive;
+  font-family: 'Poiret One', cursive;
  /*  font-weight: bold; */
    line-height: 1.3em;
 }
@@ -592,7 +592,7 @@ nav .item a{
 
 @media only screen and (max-width: 450px) {
   .imgCarusel li{
-    font-size: 2.5em;
+    font-size: 1.7em;
   }
   .imgCarusel p{
     width: 80%;
@@ -617,7 +617,7 @@ nav .item a{
     max-width: 75vw;
     height: auto;
     margin: auto;
-    margin-bottom: 5em;
+    margin-bottom: 5.5em;
     font-family: 'Spartan', sans-serif;
   }
 
