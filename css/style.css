@@ -472,11 +472,11 @@ nav .item a{
       border: solid 1px rgb(214, 214, 214);
       padding: 8px 15px 7px;
     }
-    .portfolio-block .ImgItem b:hover {
+/*     .portfolio-block .ImgItem b:hover {
       background: #fff;
       color: #525252;
       border-color: #fff;
-    }
+    } */
   
 
     @media only screen and (max-width: 768px) {
@@ -513,6 +513,14 @@ nav .item a{
       .valign-center-elem{
         font-size: 0.7rem;
       }
+
+      .portfolio-block .ImgItem  a {
+        background: transparent;
+      }
+      .portfolio-block .ImgItem b {
+        display: none;
+      }
+      
     
     }
 
