@@ -132,6 +132,10 @@ nav .item a{
     font-size: 2em;
     margin: 20px auto;
   }
+
+  header{ 
+    background-image: url('../img/moraleja_big_mobil.jpg');
+  }
 }
 
 
