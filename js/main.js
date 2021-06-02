@@ -9,6 +9,7 @@ function toggleMenu(){
 } else{
     menu.classList.add('active');/* no esta activado, pues activalo */
     toggle.querySelector('a').innerHTML = "<i class='fas fa-times'></i>"; /* cambia las 3 barras por X  */
+    document.getElementById("navbar").style.backdropFilter = "blur(7px) ";
     console.log('menu abierto')
     }
 }
@@ -38,16 +39,15 @@ window.onscroll = function() {
 
 
 //cuando usamos el scrolls down 50px desde arriba, la barra de nav cambia de color
-window.onscroll = function() {scrollFunction()};
+/* window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    document.getElementById("navbar").style.backgroundColor = "rgba(80, 80, 80, 0.6) ";
-    document.querySelectorAll('.nav_item').style.color = "red";
+     document.getElementById("navbar").style.backgroundColor = "rgba(80, 80, 80, 0.6) "; 
   } else {
     document.getElementById("navbar").style.backgroundColor = "rgba(80, 80, 80, 0.157) ";
   }
-}
+} */
 
 /*--------- ABOUT US --------- */
 function vermas(id){
