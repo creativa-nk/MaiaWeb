@@ -1,1 +1,2 @@
 [0527/113149.885:ERROR:local_storage_context_mojo.cc(706)] Lost connection to database
+[0604/003815.377:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
