@@ -192,10 +192,11 @@ nav .item a{
 .aboutUs a{
   text-decoration: none;
   color: #233f8dc7;
+  cursor: pointer;
+  
 }
-.aboutUs #desplegar{
-  display: inline;
-}
+
+#more {display: none;}
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
   .aboutUs{
