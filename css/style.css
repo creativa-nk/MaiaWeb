@@ -128,7 +128,7 @@ nav .item a{
   nav .item a{
     padding: 1em;
     font-size: 2em;
-    margin: 15px auto;
+    margin: 28px auto;
     color: rgb(223, 223, 223);
   }
   nav{
@@ -482,7 +482,7 @@ nav .item a{
 
 /* -------------------LIGHTBOX------------------------ */
 .container-img{
-  background: rgba(31, 31, 31, 0.8);
+  background: rgba(31, 31, 31);
   height: 100%;
   width: 100%;
   position: fixed;
