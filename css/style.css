@@ -397,7 +397,7 @@ nav .item a{
 
 
 
-  /* Portfolio  GALERIA */
+  /*----------------- Portfolio  GALERIA----------------------- */
 
 .titulo{
   margin:4em auto ;
@@ -410,12 +410,12 @@ nav .item a{
   border-bottom: 2px solid #b7bbbf;
   width: 80%;
   text-align: center;
-  /* font-family: Work Sans,sans-serif; */
   font-family: 'Spartan', sans-serif;
-  /*   font-weight: lighter; */
 }
 .grid{
   display: grid;
+  display: -webkit-grid;
+  -webkit-grid-columns: repeat(4,1fr);
   grid-template-columns: repeat(4,1fr);
   width: 95%;
   height: 90%;
@@ -427,28 +427,7 @@ nav .item a{
   height: 100%;
   cursor: pointer;
 } 
-
-/* .portfolio-block   {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: rgba(2, 2, 2, 0.589);
-  position: absolute;
-  left: 0;
-  bottom: -100%;
-  width: 100%;
-  height: 100%;
-  text-transform: uppercase;
-  color: #fff;
-  transition: all 10s ease;
-  -o-transition: all 10s ease;
-  -ms-transition: all 10s ease;
-  -moz-transition: all 10s ease;
-  -webkit-transition: all 10s ease;
-}
- */
-  
+ 
 
 @media only screen and (max-width: 768px) {
     .grid{
@@ -465,7 +444,7 @@ nav .item a{
     
   }
   
-  @media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
     .grid{
       grid-template-columns: repeat(1,1fr); 
       row-gap: 0.5em; 
@@ -488,8 +467,16 @@ nav .item a{
   position: fixed;
   top: 0;
   left: 0;   /* !!!!!!!!! */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
   align-items: center;
   transform: translateX(-100%); /* esconder a la izquierda */
   transition: transform .4s ease-in;
