@@ -428,7 +428,7 @@ nav .item a{
   cursor: pointer;
 } 
 
-.portfolio-block .ImgItem   {
+/* .portfolio-block   {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,7 +447,7 @@ nav .item a{
   -moz-transition: all 10s ease;
   -webkit-transition: all 10s ease;
 }
-
+ */
   
 
 @media only screen and (max-width: 768px) {
