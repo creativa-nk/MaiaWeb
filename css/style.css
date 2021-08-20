@@ -42,7 +42,6 @@ header{
 
 nav{
   background:rgba(80, 80, 80, 0.157) ;
-  /* background:rgba(255, 253, 253, 0.424) ; */
   padding: 0 15px;
   transition: top 0.5s;
 }
@@ -96,7 +95,7 @@ nav .item a{
 }
 .item{
   order: 2; /* cambiamos el orden, items aparecen los ultimos */
-  width: 100%; /* se queda el la linea de arriba el logo y toggkebar, los items bajan */
+  width: 100%; /* se queda el la linea de arriba el logo y navebar, los items bajan */
   text-align: center;
   display: none; /* desaparecen */
 }
@@ -115,12 +114,6 @@ nav .item a{
   .logo{
       flex: 1;
   }
-
-/*   .toggle{
-      flex: 1;
-      text-align: right;
-      order: 1;
-  }  */
   
 }
 
@@ -461,7 +454,7 @@ nav .item a{
 
 /* -------------------LIGHTBOX------------------------ */
 .container-img{
-  background: rgba(31, 31, 31);
+  background: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
   position: fixed;
@@ -501,7 +494,7 @@ transform: scale(1);
 
 .x{
   position: absolute;
-  color: white;
+  color: rgb(0, 0, 0);
   top: 4em;
   right: 0.7em;
   font-size: 1.7em;

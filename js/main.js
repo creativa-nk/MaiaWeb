@@ -10,6 +10,7 @@ function toggleMenu(){
     menu.classList.add('active');/* no esta activado, pues activalo */
     toggle.querySelector('a').innerHTML = "<i class='fas fa-times'></i>"; /* cambia las 3 barras por X  */
     document.getElementById("navbar").style.backdropFilter = "blur(7px) ";
+    document.getElementById("navbar").style.height = "100vh ";
     console.log('menu abierto')
     }
 }
@@ -20,6 +21,7 @@ toggle.addEventListener('click', toggleMenu, false);
 function closeNav(){
     menu.classList.remove('active'); /* entonces que quite este algo activado(lo cierra) */
       toggle.querySelector('a').innerHTML = "<i class='fas fa-bars'></i>"; /* y cambie el <a> por 3 barras */
+      document.getElementById("navbar").style.height = "auto";
       console.log('menu cerrado')
 }
 
