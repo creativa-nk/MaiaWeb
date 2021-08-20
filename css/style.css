@@ -4,6 +4,9 @@
     box-sizing: border-box;
     overflow-x: hidden; 
 }
+
+::-webkit-scrollbar {display: none;}
+
 html{
   height:100%; 
 }
@@ -472,8 +475,14 @@ nav .item a{
 
   align-items: center;
   transform: translateX(-100%); /* esconder a la izquierda */
+  -webkit-transform: translateX(-100%);
+
   transition: transform .4s ease-in;
-  z-index: 1;
+  -webkit-transition: transform .4s ease-in;
+  -moz-transition: transform .4s ease-in;
+  -o-transition: transform .4s ease-in;
+
+  z-index: 10;
 }
 .move{
   transform: translateX(0);
@@ -496,8 +505,8 @@ transform: scale(1);
   position: absolute;
   color: rgb(0, 0, 0);
   top: 4em;
-  right: 0.7em;
-  font-size: 1.7em;
+  right: 1.1rem;
+  font-size: 1.3em;
   cursor: pointer;
 }
 
@@ -531,8 +540,12 @@ transform: scale(1);
 /* ------start-----Carusel de frases----- */
 .separador{
   height: 15em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
 }
 
 .imgCarusel{
@@ -542,6 +555,9 @@ transform: scale(1);
 }
 
 .imgCarusel ul{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   width: 400%;
