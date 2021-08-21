@@ -421,7 +421,6 @@ nav .item a{
   width: 100%;
   cursor: pointer;
 } 
- 
 
 @media only screen and (max-width: 768px) {
   .container-grid{
@@ -507,6 +506,14 @@ transform: scale(1);
   right: 1.1rem;
   font-size: 1.3em;
   cursor: pointer;
+}
+.imagen{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+.copy{
+  margin: 1em 0;
 }
 
 
