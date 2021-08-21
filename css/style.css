@@ -408,40 +408,39 @@ nav .item a{
   text-align: center;
   font-family: 'Spartan', sans-serif;
 }
-.grid{
+.container-grid{
   display: grid;
   display: -webkit-grid;
   -webkit-grid-columns: repeat(4,1fr);
   grid-template-columns: repeat(4,1fr);
-  width: 95%;
-  height: 90%;
   margin: 2em auto;
   transition:all 2s; 
+  align-items: stretch;
 }
-.grid img{
+.container-grid img{
   width: 100%;
-  height: 100%;
   cursor: pointer;
 } 
  
 
 @media only screen and (max-width: 768px) {
-    .grid{
+  .container-grid{
       grid-template-columns: repeat(3,1fr);  
     }
-
     .titulo{
       margin-top: 1em;
     }
     .titulo h1{
     padding: 0.7em;
-    
     }
+    .container-grid img{
+      height: 100%;
+    } 
     
   }
   
 @media only screen and (max-width: 450px) {
-    .grid{
+  .container-grid{
       grid-template-columns: repeat(1,1fr); 
       row-gap: 0.5em; 
     }
@@ -512,21 +511,18 @@ transform: scale(1);
 
 
 @media only screen and (min-width:1024px){
-  .imagen{
+   .imagen{
       /* background: red; */
       max-height: 80%; 
       max-width: 80%; 
-  }
+  } 
   .imagen img{
       max-width: 70vw;
   }
-  .far.fa-times-circle{
+  .fas.fa-times{
       font-size: 4em;
-      top: 2em;
-      right: 2em;
-  }
-  .container-grid{
-      height: 1100vh;
+      top: 4em;
+      right: 5em;
   }
   .scroll-ups {
       transform: scale(2);
