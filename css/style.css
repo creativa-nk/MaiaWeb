@@ -513,9 +513,9 @@ transform: scale(1);
   justify-content: space-around
 }
 .copy{
+  font-size: 0.8rem;
   margin: 1em 0;
 }
-
 
 @media only screen and (min-width:1024px){
    .imagen{
