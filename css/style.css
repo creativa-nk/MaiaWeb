@@ -194,6 +194,29 @@ nav .item a{
 
 #more {display: none;}
 
+span {
+  animation: glow-in 1ms both;
+  animation-delay: 10ms;
+}
+
+
+@keyframes glow-in {
+from {
+  opacity: 0;
+}
+65% {
+  opacity: 1;
+  
+}
+75% {
+  opacity: 1;
+}
+to {
+  opacity: 0.8;
+}
+}
+
+
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
   .aboutUs{
     height: auto;
@@ -421,6 +444,9 @@ nav .item a{
   width: 100%;
   cursor: pointer;
 } 
+.container-grid .IMGresponsive:hover{
+  border: 5px solid white;
+}
 
 @media only screen and (max-width: 768px) {
   .container-grid{
@@ -450,12 +476,13 @@ nav .item a{
     .valign-center-elem{
       font-size: 0.7rem;
     }
+  
 
 }
 
 /* -------------------LIGHTBOX------------------------ */
 .container-img{
-  background: rgb(255, 255, 255);
+  background: rgb(44, 44, 44);
   height: 100%;
   width: 100%;
   position: fixed;
@@ -480,10 +507,11 @@ nav .item a{
   -moz-transition: transform .4s ease-in;
   -o-transition: transform .4s ease-in;
 
-  z-index: 10;
+  z-index: 0;
 }
 .move{
   transform: translateX(0);
+  z-index: 10;
 }
 .img-show{
   /* width: 70%; */ /* portatil */
@@ -501,21 +529,57 @@ transform: scale(1);
 
 .x{
   position: absolute;
-  color: rgb(0, 0, 0);
-  top: 4em;
-  right: 1.1rem;
-  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+  top: 4rem;
+  right: 4rem;
   cursor: pointer;
 }
+
+.close{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.close::before, .close::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: rgb(255, 255, 255);
+  height: 2.5px;
+}
+
+.close::before {
+   transform: rotate(45deg);
+}
+.close::after {
+   transform:rotate(-45deg);
+}
+.close:hover::before,.close:hover::after{
+  background: rgb(75, 124, 153);
+}
+
+
+
 .imagen{
   display: flex;
   flex-direction: column;
   justify-content: space-around
 }
 .copy{
-  font-size: 0.8rem;
+  color: white;
+  font-size: 0.9rem;
   margin: 1em 0;
 }
+
+
+
 
 @media only screen and (min-width:1024px){
    .imagen{
@@ -538,6 +602,28 @@ transform: scale(1);
       height: 100vh;
   }
 
+}
+@media only screen and (max-width: 780px){
+  .close{
+    width: 30px;
+    height: 30px;
+  }
+  .x{
+    right: 1rem;
+  }
+  .copy{
+    font-size: 0.6rem;
+    margin: 1em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  
+  .copy{
+    font-size: 0.5rem;
+
+  }
+ 
 }
 
 /* ------start-----Carusel de frases----- */
